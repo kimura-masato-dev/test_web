@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+　1. リセットCSS（ブラウザごとの余計な余白や装飾を消す）
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 👈 サイズ計算をラクにする超重要設定 */
+}
+
+a {
+  color: inherit;
+  text-align: none;
+}
+
+/* リストの「・」を消す */
+ul, ol {
+  list-style: none;
+}
+
+/* 画像の下に謎の隙間ができるのを防ぐ */
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* ==========================================================================
+  2. ベーススタイル（サイト全体の基本ルール）
+   ========================================================================== */
+body {
+    /* 日本語が綺麗に表示されるフォント指定 */
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    -webkit-font-smoothing: antialiased; /* 文字を滑らかに */
+    
+    color: #333333;             /* 全体の文字色 */
+    background-color: #ffffff;  /* 全体の背景色（白） */
+    line-height: 1.6;           /* 読みやすい行間 */
+}
