@@ -12,7 +12,7 @@
 
 a {
   color: inherit;
-  text-align: none;
+  text-decoration: none;
 }
 
 /* リストの「・」を消す */
@@ -36,19 +36,36 @@ img {
   display: flex;
   align-items: center;
   padding: 0 80px;
+  font-size: 16px;
 }
 
 #header h1 {
-  color:azure;
+  color: #ffffff;
   font-size: 24px;
-  background-color: brown;
   /*margin-left: 80px;*/
 }
 
 #header .menu_list {
-  background-color:aqua;
-  width: 700px;
-  height: 80px;
+  color:#ffffff;
+  align-items: center;
   margin-left: auto;
   /*margin-right: 80px;*/
+}
+
+#header .menu_list ul {
+  display: flex;
+  gap: 32px;
+}
+
+/* ==========================================================================
+　1.5 ホバー（ドラッグ時にメニュー要素が少し変化するCSS）
+   ========================================================================== */
+
+
+#header .menu_list a {
+  transition: opacity 0.3s ease; 
+}
+
+#header .menu_list a:hover {
+  opacity: 0.8;
 }
