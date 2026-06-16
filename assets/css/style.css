@@ -69,3 +69,17 @@ img {
 #header .menu_list a:hover {
   opacity: 0.8;
 }
+
+#header .entry_button {
+  margin-left: 32px;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#header .entry_button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
